@@ -2,8 +2,42 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    <main className="bg-violet-900 min-h-screen md:p-10 lg:p-20 max-[440px]:p-6 max-[320px]:p-2">
+      <div className="flex items-center text-[color:white]">
+        <div className="max-[440px]:w-14 mr-2">
+          <Image
+            src={'/images/gamble-god-logo.png'}
+            alt='Gamblegod Logo'
+            width={150}
+            height={200}
+          />
+        </div>
+
+        <div className='md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-medium md:ml-4 leading-tight max-[375px]:text-[font-size: 16px] max-[320px]:text-[font-size: 13px]'>
+          <span>Welcome To Gamble God!!! The</span><br/><span>Home Of Proven Information</span>
+        </div>
+      </div>
+     
+
+      <div className="mt-20 flex items-center justify-center text-[color:white] ">
+        <div className=' mr-3 mb-3'>
+          <span className='mr-3 md:text-6xl md:text-4xl font-bold lg:text-5xl xl:text-6xl'>SOMETHING</span>
+          <span className='xl:text-8xl md:text-6xl font-bold text-[color:#f8c05a] lg:text-7xl'>BIG</span>
+          <span className='ml-3 md:text-6xl md:text-4xl font-bold lg:text-5xl xl:text-6xl'>IS COMING !</span>
+        </div>
+      </div>
+      <div className='flex sm:justify-end mt-9 max-[375px]: justify-center'>
+        <Image
+          src={'/images/gamble-god-logo.png'}
+          alt='Gamblegod Logo'
+          width={150}
+          height={200}
+          className='opacity-30'
+        />
+      </div>
+      {/* <img src="/images/righ-top image.png" alt="" /> */}
+      {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+        <p></p>
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
@@ -107,7 +141,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   )
 }
