@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="bg-violet-900 min-h-screen xl:p-6 lg:p-7 md:p-2 max-[440px]:p-4 max-[320px]:p-2">
+    <main className="bg-violet-900 min-h-screen xl:p-10 lg:p-7 md:p-2 max-[440px]:p-4 max-[320px]:p-2">
       <div className="flex items-center text-[color:white]">
         <div className="max-[440px]:w-14 min-[425px]:w-20 min-[375px]:w-16 md:w-24 xl:w-36 mr-2">
           <Image
