@@ -95,7 +95,7 @@ export default function Home() {
           </h1>
           {/* <div className='w-80 h-30'>
             <Image src={'/images/stars.png'} alt={'stars'} fill />
-          </div> */}
+          </div> */}  
         </Container>
       </div>
     </main>
