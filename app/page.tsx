@@ -32,7 +32,7 @@ export default function Home() {
           alt='Gamblegod Logo'
           width={150}
           height={200}
-          className='opacity-30 xl:w-56'
+          className='opacity-30 xl:w-56' 
         />
       </div>
     </main>
