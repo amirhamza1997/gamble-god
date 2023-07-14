@@ -9,7 +9,7 @@ const Headers = () => {
         <PrimaryButton>Free $ 60 account</PrimaryButton>
         <PrimaryButton>Free $ 60 account</PrimaryButton>
       </div>
-      <div className='flex items-center gap-3'>
+      <div className='flex items-center gap-3 text-white'>
         <p className='text-base'>service@docsports.com</p>
         <p className='text-base'>1-866-2575-236</p>
       </div>

@@ -1,7 +1,10 @@
 import Container from '@/components/Container';
 import Headers from '@/components/Headers';
+import { BsInstagram } from 'react-icons/bs';
+import { FaFacebookF, FaTwitter, FaYoutube,FaPinterestP } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
+import PrimaryButton from '@/components/PrimaryButton';
 
 export default function Home() {
   return (
@@ -21,7 +24,7 @@ export default function Home() {
           alt='portal'
           className='absolute w-1/4 h-1/2 right-10 mix-blend-color-dodge'
         />
-        <div className='max-w-[1100px] mx-auto p-4 flex flex-col gap-6 z-10 relative'>
+        <div className='max-w-[1100px] mx-auto p-4 flex flex-col text-white gap-6 z-10 relative'>
           <div className='flex items-center gap-6'>
             <div className='h-36 w-36 relative'>
               <Image src={'/images/gamble-god-logo.png'} alt={'logo'} fill />
@@ -86,16 +89,58 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className='flex-1 bg-dark-pink'>
+      <div className='relative flex-1 bg-dark-pink font-black pt-12 pb-32'>
         <Container>
-          <h1 className='text-center p-5 text-4xl'>
+          <h1 className='text-center px-5 text-4xl text-white leading-[3.5rem]	'>
             Sports betting meets proven information,
             <br /> Proven Systems, Proven WINNERS!!! <br /> Money Back
-            Guarantee!!! <br /> Join Now
+            Guarantee!!!
           </h1>
-          {/* <div className='w-80 h-30'>
-            <Image src={'/images/stars.png'} alt={'stars'} fill />
-          </div> */}  
+          <div className='text-4xl text-center text-yellow'>
+            <a href="" >Join Now</a>
+          </div>
+          <div className='w-80 h-30' >
+            <Image src={'/images/stars.png'} alt={'stars'} width={500} height={500}  className='absolute top-32 right-[27rem] mix-blend-color-dodge  color: transparent inset: 0px;'/>
+          </div>  
+        </Container>
+      </div>
+      <Container className='pt-12 py-8 flex'>
+        <div>
+          <div className='h-28 w-28 relative'>
+            <Image src={'/images/gamble-god-logo.png'} alt={'logo'} fill/>
+          </div>
+
+          <div className='flex gap-x-4 text-white mt-6'>
+            <FaFacebookF/>
+            <FaTwitter/>
+            <BsInstagram/>
+            <FaYoutube/>
+            <FaPinterestP/>
+          </div>
+        </div>
+      <div className='pt-2 pr-4 text-white pl-24'>
+        <h4>Gamble Article Archives LI</h4>
+        <p className='text-xs	max-w-screen-md mt-2 '>If you think you have a gambling problem call the National Problem Gambling Helpline at 1-800-522-4700 or visit ncpgambling.org
+        While internet gambling is legal in over 80 countries activities offered by advertising links to other websites may be deemed an illegal activity in your jurisdiction. Viewers 
+        are warned that they should inquire into the legality of participating in any games and/or activities offered by such other sites. The owner of this website assumes no responsibility 
+        for the actions by and makes no representation or endorsement of any of these games and/or activities offered 
+        by the advertiser. As a condition of viewing this website viewers agree to hold the owner of this website 
+        harmless from any claims arising from the viewer's participation in any of the games and/or activities offered 
+        by the advertiser.</p>
+        <div >
+          <ul className='mt-8 flex justify-between	'>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Affilliate Program, RSS, Writer Bios, Archives</li>
+          </ul>
+        </div>
+      </div>
+      </Container>
+      <div className='bg-yellow '>
+        <Container className='flex justify-between items-center py-2'>
+            <span>© 2023 Gamble site Service. All Rights Reserved.</span>
+            <PrimaryButton>Free $ 60 account</PrimaryButton>
         </Container>
       </div>
     </main>
