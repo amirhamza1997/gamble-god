@@ -10,11 +10,12 @@ type ReactNodeWithoutObject =
 
 interface InputProps {
   children: ReactNodeWithoutObject;
+  className?: string
 }
 
 const PrimaryButton: React.FC<InputProps> = (props) => {
   return (
-    <button className='rounded-lg bg-[#1D1D1D] px-8 py-2 text-[#D6AA28]'>
+    <button className={`rounded-lg bg-[#1D1D1D] text-[#D6AA28] px-8 py-2 w-[100%]  ${props.className}`}>
       {props.children}
     </button>
   );
