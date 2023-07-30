@@ -5,14 +5,14 @@ import Container from './Container';
 const Headers = () => {
   return (
     <div className='bg-pink'>
-      <Container className='w-[100%]  py-4 flex items-center justify-between xs:flex-col-reverse xs: gap-3'>
-        <div className='flex items-center gap-3 xs:flex-col-reverse sm:flex-row sm:items-center'>
-          <PrimaryButton className=''>Free $ 60 account</PrimaryButton>
-          <PrimaryButton>today's best bet</PrimaryButton>
+      <Container className='w-[100%] flex flex-col items-center justify-center gap-1 py-3 md:flex-row-reverse md:justify-between px-2'>
+        <div className='flex items-center justify-center gap-3 text-white sm:w-full md:w-fit'>
+          <p className='text-sm md:text-base'>service@docsports.com</p>
+          <p className='text-sm md:text-base'>1-866-2575-236</p>
         </div>
-        <div className='flex items-center gap-3 text-white flex-col'>
-          <p className='text-base'>service@docsports.com</p>
-          <p className='text-base'>1-866-2575-236</p> 
+        <div className='flex flex-col justify-center gap-2 sm:flex-row sm:w-full md:w-fit'>
+          <PrimaryButton>Free $ 60 account</PrimaryButton>
+          <PrimaryButton>Free $ 60 account</PrimaryButton>
         </div>
       </Container>
     </div>
