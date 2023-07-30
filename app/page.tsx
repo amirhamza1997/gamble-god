@@ -76,7 +76,7 @@ export default function Home() {
               Guarantee!!!
             </h1>
             <div className='text-4xl text-center text-yellow'>
-              <Link href='/views'>Join Now</Link>
+              <Link href='/views/packages'>Join Now</Link>
             </div>
             <div className='w-80 h-30'>
               <Image src={'/images/stars.png'} alt={'stars'} width={500} height={500}  className='absolute top-32 right-[27rem] mix-blend-color-dodge  color: transparent inset: 0px;'/>
