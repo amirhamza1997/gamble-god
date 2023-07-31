@@ -12,7 +12,7 @@ import PrimaryButton from './PrimaryButton';
 
 const Footer = () => {
   return (
-    <div>
+    <div className='bg-pink'>
       <Container className='pt-12 py-8 px-3 flex flex-col-reverse gap-3 md:flex-row md:gap-28'>
         <div className='flex items-end flex-col'>
           <div className='h-28 w-28 relative'>

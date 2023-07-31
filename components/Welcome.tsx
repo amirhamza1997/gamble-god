@@ -21,7 +21,7 @@ function Welcome() {
           className='absolute w-[35%] z-[1] right-10 mix-blend-color-dodge hidden md:block'
         />
         <div className='max-w-[1100px] mx-auto p-4 flex flex-col text-white gap-6 z-10 relative'>
-          <div className='flex items-center gap-6'>
+          <div className='flex items-start gap-6 flex-col sm:items-center sm:flex-row'>
             <div className='h-36 w-36 relative'>
               <Image src={'/images/gamble-god-logo.png'} alt={'logo'} fill />
             </div>

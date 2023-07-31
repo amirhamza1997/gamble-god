@@ -12,7 +12,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-primary': 'linear-gradient(90deg, #D6AA28 0.93%, #FC9500 100%)'
-          
+      },
+      gridTemplateRows: {
+        'layout': 'repeat(auto-fit, minmax(280px, 1fr))',
       }
     },
     screens: {
