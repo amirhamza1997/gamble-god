@@ -145,7 +145,6 @@ export default function New() {
                 <div className='text-base	pb-8'>
                   <span>30 Day - Weekly Gamble God Package</span><br />
                   <span className='bg-[#D6AA28] rounded-md'>$1050 + Fee (30% discount)</span><br /><br />
-                  {/* <span>**RECOMMENDED**</span><br /><br /> */}
                   <span className='bg-[#D6AA28] rounded-md'>100 % MONEY BACK GUARANTEE</span>
                   <p className='text-sm	mt-2'>With this package you will receive all the plays released for a 7 day period. If at the end of the
                    7 day period the package doesn’t result in a profit (Positive units), the pack age price will be refunded to you.</p>
@@ -188,7 +187,6 @@ export default function New() {
                 <div className='text-base	pb-8'>
                   <span>30 Day - Weekly Gamble God Package</span><br />
                   <span className='bg-[#D6AA28] rounded-md'>$2100 + Fee (30% discount)</span><br /><br />
-                  {/* <span>**RECOMMENDED**</span><br /><br /> */}
                   <span className='bg-[#D6AA28] rounded-md'>100 % MONEY BACK GUARANTEE</span>
                   <p className='text-sm	mt-2'>With this package you will receive all the plays released for a 7 day period. If at the end of the
                    7 day period the package doesn’t result in a profit (Positive units), the pack age price will be refunded to you.</p>
