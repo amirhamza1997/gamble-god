@@ -4,6 +4,7 @@ import React, { ReactNode } from 'react';
 interface InputProps {
   title: string;
   selected: boolean;
+  start?: boolean;
   points: {
     title: string;
     highlighted1: string;
@@ -13,14 +14,14 @@ interface InputProps {
   }[];
 }
 
-const Package: React.FC<InputProps> = ({ title, points, selected }) => {
+const Package: React.FC<InputProps> = ({ title, points, selected, start }) => {
   return (
     <div
       className={`border-2 rounded-md flex-1 border-${
         selected ? 'yellow' : 'pink'
       }`}
     >
-      <h3 className={`text-center p-2 bg-${selected ? 'yellow' : 'pink'}`}>
+      <h3 className={`text-${start ? 'start' : 'center'} p-2 bg-${selected ? 'yellow' : 'pink'}`}>
         {title}
       </h3>
       <div className='flex flex-col gap-3 px-3 py-6'>
