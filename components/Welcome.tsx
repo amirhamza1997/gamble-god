@@ -14,7 +14,7 @@ function Welcome() {
       </div>
 
       <div className='flex-1 relative bg-dark-pink'>
-        <div className='absolute w-full h-full -z-0 content-["  "] opacity-50 bg-[url("/images/texture.png")] '></div>
+        {/* <div className='absolute w-full h-full -z-0 content-["  "] opacity-50 bg-[url("/images/texture.png")] '></div> */}
         <img
           src={'/images/portal.png'}
           alt='portal'

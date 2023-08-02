@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className='bg-pink min-h-screen flex flex-col '>
       <div className='flex-1 relative bg-dark-pink'>
-        <div className='absolute  w-full h-full -z-0   content-["  "] opacity-50 bg-[url("/images/texture.png")] '></div>
+        {/* <div className='absolute  w-full h-full -z-0   content-["  "] opacity-50 bg-[url("/images/texture.png")] '></div> */}
         <div className='max-w-[1100px] mx-auto p-4 flex flex-col text-white gap-6 z-10 relative'>
           <p className='text-'>
             Imagine walking into a casino and the cocktail waitress comes up to

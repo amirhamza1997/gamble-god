@@ -140,7 +140,7 @@ export default function New() {
 
   return (
     <main className='bg-dark-pink flex flex-col'>
-      <div className='absolute  w-full h-full -z-0 content-["  "] opacity-50 bg-[url("/images/texture.png")] left-0 right-0 '></div>
+      {/* <div className='absolute  w-full h-full -z-0 content-["  "] opacity-50 bg-[url("/images/texture.png")] left-0 right-0 '></div> */}
       <Container className='flex justify-between flex-col gap-10 px-4 my-6 md:flex-row'>
         <DetailSection
           title={'Select your Player Package'}

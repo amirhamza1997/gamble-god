@@ -29,7 +29,7 @@ function Accounts() {
   };
   return (
     <main className='bg-dark-pink min-h-screen flex flex-col'>
-      <div className='absolute  w-full h-full -z-0   content-["  "] opacity-50 bg-[url("/images/texture.png")] '></div>
+      {/* <div className='absolute  w-full h-full z-0   content-["  "] opacity-50 bg-[url("/images/texture.png")] '></div> */}
       <Container>
         <div className='flex flex-col justify-between gap-10 mt-10 p-4 md:flex-row'>
           <DetailSection
@@ -84,7 +84,7 @@ function Accounts() {
               <Button>Continue</Button>
             </form>
 
-            <p className='text-sm bg-[#e9e9e9] mt-3 p-6 text'>
+            <p className='text-sm bg-[#e9e9e9] mt-3 p-6 text-[#000]'>
               Our weekly newsletter is loaded with exclusive free picks, insight
               and advice from our expert handicappers. That include free sports
               picks, predictions and odds on almost every single game as well as
