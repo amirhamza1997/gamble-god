@@ -5,6 +5,7 @@ import Package from '@/components/Package';
 import PriceStack from '@/components/PriceStack';
 import Button from '@/components/core/Button';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useCallback, useState } from 'react';
 
 const rightSideData = [
@@ -156,8 +157,9 @@ export default function New() {
               selected={selected === item.value}
             />
           ))}
-
-          <Button>Continue</Button>
+          <Link href={'/views/accounts'}>
+          <Button >Continue</Button>
+          </Link>
         </div>
       </Container>
       <div className='bg-[#3D0069] relative mt-16 text-white'>

@@ -4,6 +4,7 @@ import DetailSection from '@/components/DetailSection';
 import InputField from '@/components/InputField';
 import Button from '@/components/core/Button';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const rightSideData = [
@@ -81,7 +82,9 @@ function Accounts() {
                 onChange={handleChange}
                 placeholder='Enter Your Phone Number'
               />
+              <Link href={'/views/informationConfirmation'}>
               <Button>Continue</Button>
+              </Link>
             </form>
 
             <p className='text-sm bg-[#e9e9e9] mt-3 p-6 text-[#000]'>

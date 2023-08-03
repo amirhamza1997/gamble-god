@@ -21,7 +21,7 @@ const Package: React.FC<InputProps> = ({ title, points, selected, start }) => {
         selected ? 'yellow' : 'pink'
       }`}
     >
-      <h3 className={`text-${start ? 'start' : 'center'} p-2 bg-${selected ? 'yellow' : 'pink'}`}>
+      <h3 className={`text-${start ? 'start' : 'center'} p-2 bg-${selected ? 'yellow' : 'pink'} text-white`}>
         {title}
       </h3>
       <div className='flex flex-col gap-3 px-3 py-6'>
@@ -48,11 +48,11 @@ const Point = (props: PointProps) => {
     <div className='flex gap-2  items-start'>
       <Image src='/images/Vector.png' width={35} height={35} alt='' />
 
-      <div className='text-base	flex-1'>
+      <div className='text-base	flex-1 text-white'>
         <span>{props.title}</span>
         <br />
         {props.highlighted1 && (
-          <span className='bg-[#D6AA28] rounded-sm px-2'>
+          <span className='bg-[#D6AA28] rounded-sm px-2 text-[black]'>
             {props.highlighted1}
           </span>
         )}
@@ -61,7 +61,7 @@ const Point = (props: PointProps) => {
         <br />
         <br />
         {props.highlighted2 && (
-          <span className='bg-[#D6AA28] rounded-sm px-2'>
+          <span className='bg-[#D6AA28] rounded-sm px-2 text-[black]'>
             {props.highlighted2}
           </span>
         )}

@@ -7,6 +7,7 @@ import Button from '@/components/core/Button';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaAngleLeft } from 'react-icons/fa';
+import Link from 'next/link';
 
 function InformationConfirmation() {
   const detailePackages = [
@@ -42,6 +43,7 @@ function InformationConfirmation() {
       ]
     }
   ];
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -49,6 +51,7 @@ function InformationConfirmation() {
     email: '',
     phoneNumber: ''
   });
+
   const handleChange = (event: { target: { name: string; value: string } }) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -56,6 +59,7 @@ function InformationConfirmation() {
       [name]: value
     }));
   };
+  
   return (
     <main className='bg-dark-pink min-h-screen flex flex-col'>
       {/* <div className='absolute  w-full h-full -z-0   content-["  "] opacity-50 bg-[url("/images/texture.png")] '></div> */}
@@ -119,9 +123,11 @@ function InformationConfirmation() {
                 onChange={handleChange}
                 placeholder='Enter Your Phone Number'
               />
-              <Button className='relative bg-[#D6AA28] w-full rounded-md p-1 mt-3'>
-                Continue
-              </Button>
+              <Link href={'/views/payment'}>
+                <Button className='relative bg-[#D6AA28] w-full rounded-md p-1 mt-3'>
+                  Continue
+                </Button>
+              </Link>
 
               <div className='bg-[#e9e9e9] mt-3 p-6'>
                 <div className='flex gap-3'>

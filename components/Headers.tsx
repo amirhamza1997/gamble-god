@@ -11,8 +11,8 @@ const Headers = () => {
           <p className='text-sm md:text-base'>1-866-2575-236</p>
         </div>
         <div className='flex flex-col justify-center gap-2 sm:flex-row sm:w-full md:w-fit'>
-          <PrimaryButton>Free $ 60 account</PrimaryButton>
-          <PrimaryButton>Free $ 60 account</PrimaryButton>
+          <PrimaryButton>FREE $ 60 ACCOUNT</PrimaryButton>
+          <PrimaryButton>TODAY’S BEST BET</PrimaryButton>
         </div>
       </Container>
     </div>

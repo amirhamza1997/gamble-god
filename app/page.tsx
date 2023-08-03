@@ -81,6 +81,7 @@ export default function Home() {
             <br /> Proven Systems, Proven WINNERS!!! <br /> Money Back
             Guarantee!!!
           </h1>
+          <Link href={'/views/packages'}>
           <div className='text-4xl text-center text-yellow'>
             <Link href='/views'>Join Now</Link>
           </div>
@@ -90,9 +91,10 @@ export default function Home() {
               alt={'stars'}
               width={500}
               height={500}
-              className='absolute p-4 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mix-blend-color-dodge '
+              className='absolute p-4 transform -translate-x-1/2 -translate-y-1/2 top-[64%] left-[57%] mix-blend-color-dodge '
             />
           </div>
+          </Link>
         </Container>
       </div>
     </main>
