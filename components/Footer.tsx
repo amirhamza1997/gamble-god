@@ -40,8 +40,8 @@ const Footer = () => {
             representation or endorsement of any of these games and/or
             activities offered by the advertiser. As a condition of viewing this
             website viewers agree to hold the owner of this website harmless
-            from any claims arising from the viewer's participation in any of
-            the games and/or activities offered by the advertiser.
+            from any claims arising from the viewer&apos;s participation in any
+            of the games and/or activities offered by the advertiser.
           </p>
           <div>
             <ul className='mt-2 flex flex-col gap-1 md:flex-row md:flex-wrap md:justify-between'>
