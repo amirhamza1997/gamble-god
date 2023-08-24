@@ -23,7 +23,7 @@ function Welcome() {
         <div className='max-w-[1100px] mx-auto p-4 flex flex-col text-white gap-6 z-10 relative'>
           <div className='flex items-start gap-6 flex-col sm:items-center sm:flex-row'>
             <div className='h-36 w-36 relative'>
-              <Image src={'/images/gamble-god-logo.png'} alt={'logo'} fill />
+              <Image src={'/images/gamble-god-logo.png'} alt={'logo'} fill sizes='' />
             </div>
             <h1 className='text-2xl w-[80%] font-bold sm:text-3xl md:text-5xl'>
               Welcome to Gamble God!!! The home of PROVEN Information.

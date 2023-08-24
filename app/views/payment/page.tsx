@@ -4,9 +4,12 @@ import InputField from '@/components/InputField';
 import Package from '@/components/Package';
 import Button from '@/components/core/Button';
 import Radio from '@/components/core/Radio';
+import { useStripe, useElements } from '@stripe/react-stripe-js';
 import React, { useState } from 'react'
 
 const Payment = () => {
+  const stripe = useStripe();
+  const elements = useElements();
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -23,6 +26,7 @@ const Payment = () => {
           [name]: value
         }));
       };
+      
       
   return (
     <main className='bg-dark-pink min-h-screen flex flex-col'>
