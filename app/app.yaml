@@ -1,0 +1,14 @@
+service: prompt-privacy-frontend-client-dev
+runtime: nodejs18
+
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 2
+  memory_gb: 1
+  disk_size_gb: 10
+
+handlers:
+  - url: /.*
+    secure: always
+    script: auto

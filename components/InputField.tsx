@@ -4,6 +4,7 @@ import React, { ChangeEventHandler } from 'react';
 interface InputProps {
   label?: string;
   placeholder?: string;
+  disabled?: boolean;
   name: string;
   value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -19,6 +20,7 @@ const InputField = (props: InputProps) => {
       <input
         type='text'
         placeholder={props.placeholder}
+        disabled={props.disabled}
         name={props.name}
         value={props.value}
         onChange={props.onChange}

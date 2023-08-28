@@ -6,6 +6,7 @@ import PriceStack from '@/components/PriceStack';
 import Button from '@/components/core/Button';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation'
 import { useCallback, useState } from 'react';
 
 const rightSideData = [
@@ -18,6 +19,7 @@ const packages = [
   {
     title: 'Gold Package',
     subTitle: '$25 Unit Players',
+    price: 25,
     description:
       'Gamble God Gold Package for the new marketer on a budget just wants basic tracking ...',
     value: 'gold'
@@ -26,6 +28,7 @@ const packages = [
   {
     title: 'Platinum Package',
     subTitle: '$50 Unit Players',
+    price: 50,
     description:
       'Gamble God Gold Package for the new marketer on a budget just wants basic tracking ...',
     value: 'platinum'
@@ -33,6 +36,7 @@ const packages = [
   {
     title: 'Diamond Package',
     subTitle: '$100 Unit Players',
+    price: 100,
     description:
       'Gamble God Gold Package for the new marketer on a budget just wants basic tracking ...',
     value: 'diamond'
@@ -43,6 +47,7 @@ const detailePackages = [
   {
     title: 'GOLD PACKAGE',
     selected: false,
+    value: 'gold',
     points: [
       {
         title: 'One Day Gamble God Package',
@@ -73,6 +78,7 @@ const detailePackages = [
   {
     title: 'PLATINUM PACKAGE',
     selected: true,
+    value: 'platinum',
     points: [
       {
         title: 'One Day Gamble God Package',
@@ -103,6 +109,7 @@ const detailePackages = [
   {
     title: 'DIAMOND PACKAGE',
     selected: false,
+    value: 'diamond',
     points: [
       {
         title: 'One Day Gamble God Package',
@@ -134,10 +141,20 @@ const detailePackages = [
 
 export default function New() {
   const [selected, setSelected] = useState('gold');
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
 
   const handleChange = useCallback((newValue: string) => {
     setSelected(newValue);
   }, []);
+
+  const handleClick = () => {
+    setLoading(true);
+    router.push(`/views/accounts/${selected}`)
+    setLoading(false)
+    
+  }
 
   return (
     <main className='bg-dark-pink flex flex-col'>
@@ -157,9 +174,9 @@ export default function New() {
               selected={selected === item.value}
             />
           ))}
-          <Link href={'/views/accounts'}>
-          <Button >Continue</Button>
-          </Link>
+          {/* <Link href={'/views/accounts'}> */}
+          <Button onClick={handleClick}>{loading ? 'Loading ...' : 'Continue'}</Button>
+          {/* </Link> */}
         </div>
       </Container>
       <div className='bg-[#3D0069] relative mt-16 text-white'>
@@ -169,7 +186,7 @@ export default function New() {
           </h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-4 pb-8'>
             {detailePackages.map((item, index) => (
-              <Package {...item} key={index} />
+              <Package {...item} key={index} selected={selected === item.value} />
             ))}
           </div>
         </Container>

@@ -7,7 +7,7 @@ function Welcome() {
     <div>
       <div className='bg-fadeBlack p-5'>
         <div className='max-w-[1100px] mx-auto'>
-          <Link href={'/home'} className='text-yellow '>
+          <Link href={'/'} className='text-yellow '>
             Home
           </Link>
         </div>
@@ -18,7 +18,7 @@ function Welcome() {
         <img
           src={'/images/portal.png'}
           alt='portal'
-          className='absolute w-[35%] z-[1] right-10 mix-blend-color-dodge hidden md:block'
+          className='absolute w-[35%] z-[0] right-10 mix-blend-color-dodge hidden md:block'
         />
         <div className='max-w-[1100px] mx-auto p-4 flex flex-col text-white gap-6 z-10 relative'>
           <div className='flex items-start gap-6 flex-col sm:items-center sm:flex-row'>

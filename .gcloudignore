@@ -1,0 +1,7 @@
+/app/
+/components
+/hooks
+/styles
+/utils
+/sass
+/node_modules
