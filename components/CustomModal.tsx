@@ -1,6 +1,5 @@
-
 import React, { ReactNode, useState } from 'react';
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 import InputField from './InputField';
 import Link from 'next/link';
 import { useLogin } from '@/hooks/auth';
@@ -12,15 +11,15 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
-  if (!isOpen) return null;
+  // if (!isOpen) return null;
 
   const router = useRouter();
 
-  const {mutate: login, isLoading} = useLogin()
+  const { mutate: login, isLoading } = useLogin();
 
   const [formData, setFormData] = useState({
     email: '',
-    password: '',
+    password: ''
   });
 
   const handleChange = (event: { target: { name: string; value: string } }) => {
@@ -31,25 +30,32 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     }));
   };
 
-  const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     console.log(formData);
-    
-    login(formData)
-  } 
 
-  const redirectToSignUp = ()=> {
-    router.push('/signup')
-    onClose()
-  }
+    login(formData);
+  };
+
+  const redirectToSignUp = () => {
+    router.push('/signup');
+    onClose();
+  };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div
+      className={`fixed inset-0 flex items-center justify-center z-50 ${
+        isOpen ? 'block' : 'none'
+      }`}
+    >
       <div
-        className="fixed inset-0 bg-black opacity-50 transition-opacity"
+        className='fixed inset-0 bg-black opacity-50 transition-opacity'
         onClick={onClose}
       />
-      <form onSubmit={handleSubmit} className="bg-white p-4 rounded shadow-lg z-10">
+      <form
+        onSubmit={handleSubmit}
+        className='bg-white p-4 rounded shadow-lg z-10'
+      >
         {children}
         <div className='flex flex-col gap-3'>
           <InputField
@@ -69,13 +75,13 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         </div>
         <div className='flex gap-5 justify-end'>
           <button
-            className="mt-4 px-4 py-2 bg-blue-500 text-fadeBlack bg-[#D6AA28] rounded hover:bg-blue-600"
+            className='mt-4 px-4 py-2 bg-blue-500 text-fadeBlack bg-[#D6AA28] rounded hover:bg-blue-600'
             type='submit'
           >
             Login
           </button>
           <button
-            className="mt-4 px-4 py-2 bg-blue-500 text-fadeBlack bg-[#D6AA28] rounded hover:bg-blue-600" 
+            className='mt-4 px-4 py-2 bg-blue-500 text-fadeBlack bg-[#D6AA28] rounded hover:bg-blue-600'
             onClick={redirectToSignUp}
           >
             Sign Up
