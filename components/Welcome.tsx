@@ -1,15 +1,44 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from './CustomModal';
+import { useRouter } from 'next/navigation';
 
 function Welcome() {
+  const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (link:string) => () => {
+    
+    // if (true) {
+    //   router.push(link)
+    // }
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div>
       <div className='bg-fadeBlack p-5'>
-        <div className='max-w-[1100px] mx-auto'>
+        <div className='max-w-[1100px] mx-auto flex gap-12'>
           <Link href={'/'} className='text-yellow '>
             Home
           </Link>
+          <div className='text-yellow' >
+            {/* <button onClick={openModal}>Unit System</button> */}
+            <button onClick={openModal("/views/unitsystem")} >Unit System</button>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+              <h2 className="text-xl mb-4">Welcome to our Member Area!</h2>
+              <p className='pb-2'>To get started, please log in or sign up. Your journey with us awaits!</p>
+            </Modal>
+          </div>
+          <button onClick={openModal("/views/bankroll")} className='text-yellow '>
+            Bankroll
+          </button>
         </div>
       </div>
 

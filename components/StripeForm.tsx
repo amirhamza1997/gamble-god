@@ -70,7 +70,7 @@ const SplitForm = () => {
         redirect: 'if_required'
       });
       
-      fetch(`http://192.168.18.86:8000/user/updatePayment`,
+      fetch(`https://gamble-god.uc.r.appspot.com/user/updatePayment`,
         {
      
           // Adding method type

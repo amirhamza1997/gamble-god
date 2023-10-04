@@ -3,12 +3,8 @@ import Container from '@/components/Container';
 import DetailSection from '@/components/DetailSection';
 import InputField from '@/components/InputField';
 import Button from '@/components/core/Button';
-import { data } from 'autoprefixer';
-import Image from 'next/image';
-import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
-import React, { useState, useEffect } from 'react';
-import { json } from 'stream/consumers';
+import React, { useState } from 'react';
 
 const rightSideData = [
   'When selecting this package you have to be willing to bet $25 a unit per play to properly follow our system and maximize the profits. You can expect to wager between 20-35 units a day with an average of 25 units per day.',
@@ -83,7 +79,7 @@ console.log('retrievedObject: ', JSON.parse(retrievedObject));
         router.push("/views/payment/"+ res.client_secret)
       })
 
-      console.log(data)
+      // console.log(data)
         // setFormData(data)
 
     } catch (err) {
@@ -92,7 +88,6 @@ console.log('retrievedObject: ', JSON.parse(retrievedObject));
 }
   return (
     <main className='bg-dark-pink min-h-screen flex flex-col'>
-      {/* <div className='absolute  w-full h-full z-0   content-["  "] opacity-50 bg-[url("/images/texture.png")] '></div> */}
       <Container>
         <div className='flex flex-col justify-between gap-10 mt-10 p-4 md:flex-row'>
           <DetailSection

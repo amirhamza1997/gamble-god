@@ -1,4 +1,4 @@
-service: prompt-privacy-frontend-client-dev
+service: gamble-god-client-dev
 runtime: nodejs18
 
 manual_scaling:

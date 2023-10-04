@@ -57,9 +57,9 @@ const Footer = () => {
       </Container>
       <div className='bg-yellow '>
         <Container className='flex flex-col-reverse justify-between items-center gap-2 p-2 md:flex-row'>
-          <span>© 2023 Gamble site Service. All Rights Reserved.</span>
+          <span>© 2023 Gamblegod site Service. All Rights Reserved.</span>
           <div>
-            <PrimaryButton>Free $ 60 account</PrimaryButton>
+            {/* <PrimaryButton>Free $ 60 account</PrimaryButton> */}
           </div>
         </Container>
       </div>
